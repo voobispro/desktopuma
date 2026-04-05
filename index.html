@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>UmaPet Selector</title>
+</head>
+<body>
+  <h2>Select your Uma image</h2>
+  <button id="pick">Choose Image</button>
+
+  <script>
+const { ipcRenderer } = require("electron");
+
+const pickBtn = document.getElementById("pick");
+
+pickBtn.addEventListener("click", () => {
+  ipcRenderer.send("open-file-dialog"); // ask main to open dialog
+});
+</script>
+</body>
+</html>

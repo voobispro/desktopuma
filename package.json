@@ -1,0 +1,14 @@
+{
+  "name": "umapetbuilder",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^41.1.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.1.2"
+  }
+}
